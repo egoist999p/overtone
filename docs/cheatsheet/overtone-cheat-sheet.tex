@@ -71,67 +71,7 @@
 
                \begin{document}
 
-
-               {\Large{\textbf{Overtone Cheat Sheet 0.9.1}}}
-
-               \colouredbox{green}{
-                 \section{Instruments (need to be manually referred)}
-                 \subsection{overtone.inst.drum }
-                 \begin{tabularx}{\hsize}{lX}
-                   Drums  & \cmd{kick kick2 kick3 kick4 dub-kick dry-kick small-hat closed-hat close-hat2 open-hat hat3 soft-hat noise-hat round-kick snare snare2 noise-snare tone-snare tom clap bing dance-kick quick-kick haziti-clap} \\
-                 \end{tabularx}
-                 \subsection{overtone.inst.piano }
-                 \begin{tabularx}{\hsize}{lX}
-                   Piano & \cmd{piano}\\
-                 \end{tabularx}
-                 \subsection{overtone.inst.sampled-piano }
-                 \begin{tabularx}{\hsize}{lX}
-                   Sampled Piano & \cmd{sampled-piano}\\
-                 \end{tabularx}
-                 \subsection{overtone.inst.sampler }
-                 \begin{tabularx}{\hsize}{lX}
-                   Sampler  & \cmd{granular}\\
-                 \end{tabularx}
-                 \subsection{overtone.inst.bass }
-                 \begin{tabularx}{\hsize}{lX}
-                   Bass  & \cmd{bass grunge-bass vintage-bass daf-bass}\\
-                 \end{tabularx}
-                 \subsection{overtone.inst.synth }
-                 \begin{tabularx}{\hsize}{lX}
-                   Synth  & \cmd{ticker ping tb303 mooger rise-fall-pad pad overpad buzz  ks1 ks-stringer fm-demo harmonic-swimming whoahaha bubbles supersaw cs80lead simple-flute}\\
-                 \end{tabularx}
-                 \subsection{overtone.inst.io }
-                 \begin{tabularx}{\hsize}{lX}
-                   IO   & \cmd{mic} \\
-                 \end{tabularx}
-
-               }
-
-                 \colouredbox{green}{
-                 \section{Synths (need to be manually referred)}
-
-                 \subsection {overtone.synth.sampled-piano)}
-                 \begin{tabularx}{\hsize}{lX}
-                   Sampled Piano  & \cmd{sampled-piano}\\
-                 \end{tabularx}
-                 \subsection{overtone.synth.stringed }
-                 \begin{tabularx}{\hsize}{lX}
-                   Stringed s & \cmd{guitar}\\
-                 \end{tabularx}
-                 \subsection{overtone.synth.ixi }
-                 \begin{tabularx}{\hsize}{lX}
-                   Ixi  & \cmd{impulser kick kick2 kick3}\\
-                 \end{tabularx}
-                 \subsection{overtone.synth.retro }
-                 \begin{tabularx}{\hsize}{lX}
-                   Retro  & \cmd{tb-303}\\
-                 \end{tabularx}
-                 \subsection{overtone.synth.sts }
-                 \begin{tabularx}{\hsize}{lX}
-                   STS  & \cmd{prophet}\\
-                 \end{tabularx}
-
-               }
+               {\Large{\textbf{Overtone Cheat Sheet (Overtone 0.7.0)}}}
 
                \colouredbox{pink}{
                  \section{REPL helpers}
@@ -139,154 +79,113 @@
                    Documentation&\cmd{odoc ugen-doc find-ugen find-ugen-doc}\\
                    Examples& \cmd{examples example get-example}\\
                    Shell& \cmd{ls grep}\\
-                   Synths& \cmd{unify-synthdef}\\
-                   Pretty Printing& \cmd{opp pp-synth pp-unified-synth pp-sc-synth pp-unified-sc-synth}\\
                  \end{tabularx}
                }
-
-               \colouredbox{purple}{
-               \section{Timing}
-               \subsection{Scheduling}
-               \begin{tabularx}{\hsize}{lX}
-                 Function Application & \cmd{now after-delay periodic interspaced apply-by apply-at} \\
-                 OSC & \cmd{at} \\
-                 Stopping & \cmd{stop-player kill-player} \\
-                 Feedback & \cmd{show-schedule} \\
-               \end{tabularx}
-
-                 \subsection{Metronome}
-                 \begin{tabularx}{\hsize}{lX}
-                   Create & \cmd{metronome } \\
-                   Manipulate & \cmd{metro-start metro-tick metro-beat metro-bpm metro-tock metro-bar metro-bpb}\\
-                   bps & \cmd{beat-ms}\\
-                 \end{tabularx}
-
-                 }
-
-               \colouredbox{red}{
-                 \section{Studio}
-
-                 \subsection{Mixer}
-                 \begin{tabularx}{\hsize}{lX}
-                   Control &\cmd{volume input-gain}\\
-                 \end{tabularx}
-
-                 \subsection{MIDI}
-                 \begin{tabularx}{\hsize}{lX}
-                   Connected Controllers & \cmd{midi-connected-devices midi-connected-receivers midi-find-connected-devices midi-find-connected-device midi-find-connected-receivers midi-find-connected-receiver}\\
-                   Info & \cmd{midi-device-num midi-full-device-key}\\
-                   Player & \cmd{midi-poly-player midi-player-stop midi-inst-controller}\\
-                   Discovery & \cmd{midi-capture-next-controller-control-key midi-capture-next-controller-key}\\
-                   Keys & \cmd{midi-device-keys midi-mk-control-key-keyword }\\
-                   State & \cmd{midi-agent-for-control}\\
-                 \end{tabularx}
-
-                 \subsection{Scope}
-                 \begin{tabularx}{\hsize}{lX}
-                   Create \& Reset&\cmd{scope pscope spectrogram } \\
-                 \end{tabularx}
-
-                 \subsection{Recording}
-                 \begin{tabularx}{\hsize}{lX}
-                   Stop \& Start&\cmd{recording-start recording-stop} \\
-                   Query &\cmd{recording?}\\
-                 \end{tabularx}
-
-                 \subsection{Inst Effects}
-                 \begin{tabularx}{\hsize}{lX}
-                   Instrument &\cmd{inst-volume inst-out-bus inst-fx! clear-fx}\\
-                   FX & \cmd{fx-noise-gate fx-compressor fx-limiter fx-sustainer fx-freeverb fx-reverb fx-echo fx-chorus fx-distortion fx-distortion2 fx-distortion-tubescreamer fx-bitcrusher fx-rlpf fx-rhpf fx-feedback fx-feedback-distortion } \\
-                 \end{tabularx}
-
-
-               }
-
-
 
                \colouredbox{blue2}{
-                 \section{Synth Design}
+                 \section{Synths}
                  \begin{tabularx}{\hsize}{lX}
                    Design&\cmd{definst defsynth}\\
                    Examples& \cmd{defexamples}\\
                    CGens& \cmd{defcgen}\\
+                   Control& \cmd{ctl kill}\\
                    Auditioning& \cmd{demo run}\\
-                   Checking & \cmd{with-no-ugen-checks with-ugen-debugging} \\
-                   Arguments & \cmd{synth-args synth-arg-index}\\
-
-
                  \end{tabularx}
                }
-
-               \colouredbox{grey}{
-                 \section{Synth Control}
-                 \begin{tabularx}{\hsize}{lX}
-                   Live Control& \cmd{ctl kill}\\
-                   Node Liveness & \cmd{inactive-node-modification-error inactive-buffer-modification-error block-node-until-ready? without-node-blocking with-inactive-node-modification-error with-inactive-buffer-modification-error with-inactive-modification-error}\\
-
-                 \end{tabularx}
-               }
-
-               \colouredbox{red}{
-                 \section{Event Handling}
-                 \begin{tabularx}{\hsize}{lX}
-                   Add & \cmd{on-event on-sync-event on-latest-event oneshot-event oneshot-sync-event} \\
-                   Fire & \cmd{event sync-event}\\
-                   Remove & \cmd{remove-event-handler}\\
-                   Debug & \cmd{event-debug-on event-debug-off event-monitor-on event-monitor-off event-monitor-timer event-monitor event-monitor-keys} \\
-                   Ugen Triggers & \cmd{trig-id on-trigger on-latest-trigger on-sync-trigger}\\
-
-                 \end{tabularx}
-               }
-
-               \colouredbox{orange}{
-                 \section{Nodes \& Groups}
-                 \begin{tabularx}{\hsize}{lX}
-                   Create \& Free  & \cmd{node group node-free group-free group-clear group-deep-clear}\\
-                   Manipulate & \cmd{node-start node-pause node-place node-control node-control-range node-map-controls node-map-n-controls group-prepend-node group-append-node }\\
-                   Info & \cmd{node? node-live? node-loading? node-active? node-tree pp-node-tree node-get-control node-get-controls}\\
-                   Foundation Groups & \cmd{foundation-overtone-group foundation-output-group foundation-monitor-group foundation-input-group foundation-user-group foundation-default-group foundation-safe-group foundation-safe-pre-default-group foundation-safe-post-default-group}\\
-                   Manipulation Handlers & \cmd{on-node-destroyed on-node-created on-node-paused on-node-started}\\
-                   Event Keys & \cmd{node-destroyed-event-key node-created-event-key node-paused-event-key node-started-event-key}\\
-                 \end{tabularx}
-               }
-
 
                \colouredbox{grey}{
                  \section{Server}
                  \begin{tabularx}{\hsize}{lX}
                    Startup&\cmd{boot-server boot-internal-server boot-external-server connect-external-server}\\
                    Shutdown&\cmd{kill-server}\\
-                   Control& \cmd{stop clear stop-all clear-all}\\
-                   OSC Communication& \cmd{snd recv clear-msg-queue at snd-immediately}\\
-                   Diagnostic& \cmd{server-status server-info server-opts server-connected? server-disconnected? server-connecting? internal-server? external-server? connection-info server-sample-rate server-num-output-buses server-num-input-buses server-num-audio-buses server-num-buffers ensure-connected!}\\
+                   Control& \cmd{stop}\\
+                   OSC Communication& \cmd{snd recv clear-msg-queue}\\
+                   Diagnostic& \cmd{server-status server-info server-connected? server-disconnected? connection-info server-sample-rate server-num-output-buses server-num-input-buses server-num-audio-buses server-num-buffers}\\
                    Debug& \cmd{sc-osc-log-on sc-osc-log-off sc-osc-log sc-debug-on sc-debug-off external-server-log sc-osc-debug-on sc-osc-debug-off}\\
                  \end{tabularx}
                }
 
-               \colouredbox{pink}{
-                 \section{Visualisation}
-                 \subsection{Graphviz}
+               \colouredbox{yellow}{
+                 \section{Event Handling}
                  \begin{tabularx}{\hsize}{lX}
-                    Dot Notation &\cmd{graphviz} \\
-                    Show PDF &\cmd{show-graphviz-synth} \\
-                 \end{tabularx}
-               }
-
-               \colouredbox{green}{
-                 \section{External Assets}
-                 \subsection{Generic URLs}
-                 \begin{tabularx}{\hsize}{lX}
-                    Auto cache \& Return Path&\cmd{asset-path asset-seq asset-bundle-path asset-bundle-dir} \\
-                 \end{tabularx}
-
-                 \subsection{Freesound.org}
-                 \begin{tabularx}{\hsize}{lX}
-                   Playable Function &\cmd{freesound} \\
-                   Auto cache \& Query&\cmd{freesound-info freesound-path freesound-pack-info freesound-pack-dir freesound-search freesound-searchm freesound-search-paths} \\
+                   Add & \cmd{on-event on-sync-event} \\
+                   Remove & \cmd{remove-handler remove-all-handlers}\\
+                   Trigger & \cmd{event sync-event oneshot-event oneshot-sync-event}\\
+                   Synth Triggers & \cmd{on-trigger remove-trigger}\\
+                   Debug& \cmd{event-debug-on event-debug-off}
                  \end{tabularx}
                }
 
                \colouredbox{purple}{
+                 \section{Sound Data}
+                 \subsection{Buffers}
+                 \begin{tabularx}{\hsize}{lX}
+                   Create \& Free & \cmd{buffer buffer-free buffer-alloc-read} \\
+                   Generate Buffer Data & \cmd{data->wavetable create-buffer-data}\\
+                   Read \& Write To Server & \cmd{buffer-read buffer-write! buffer-fill! buffer-set! buffer-get buffer-save buffer-data buffer-read}\\
+                   Write To Filesystem & \cmd{write-wav}\\
+                   Streaming In \& Out&\cmd{buffer-stream buffer-stream? buffer-stream-close buffer-cue buffer-cue? buffer-cue-pos buffer-stream-close}\\
+                   Query & \cmd{buffer? buffer-info? file-buffer? buffer-out-stream? buffer-in-stream?}\\
+                   Info & \cmd{buffer-info num-frames buffer-id}\\
+                 \end{tabularx}
+                 \subsection{Samples}
+                 \begin{tabularx}{\hsize}{lX}
+                   Create  & \cmd{load-sample load-samples sample defsample} \\
+                   Playback& \cmd{mono-player stereo-player}\\
+                 \end{tabularx}
+
+                 \subsection{Busses}
+                 \begin{tabularx}{\hsize}{lX}
+                   Create \& Free & \cmd{control-bus audio-bus free-bus}\\
+                   Modify \& Read & \cmd{bus-set! bus-set-range! bus-get bus-get-range}\\
+                   Query & \cmd{bus? control-bus?}\\
+                   Info & \cmd{bus-id}
+                 \end{tabularx}
+               }
+
+               \colouredbox{green}{
+                 \section{Studio}
+                 \subsection{Instruments}
+                 \begin{tabularx}{\hsize}{lX}
+                   Drums & \cmd{kick kick2 kick3 kick4 dub-kick dry-kick small-hat closed-hat close-hat2 open-hat hat3 soft-hat noise-hat round-kick snare snare2 noise-snare tone-snare tom clap bing } \\
+                   Piano & \cmd{piano}\\
+                   Sampled Piano & \cmd{sampled-piano}\\
+                   Sampler & \cmd{granular}\\
+                   Synth& \cmd{ticker ping tb303 mooger rise-fall-pad pad overpad buzz bass grunge-bass vintage-bass ks1 ks-stringer fm-demo harmonic-swimming whoahaha bubbles}\\
+                   IO & \cmd{mic}
+                 \end{tabularx}
+
+                 \subsection{Mixer}
+                 \begin{tabularx}{\hsize}{lX}
+                   Control &\cmd{volume input-gain}\\
+                 \end{tabularx}
+
+                 \subsection{Effects}
+                 \begin{tabularx}{\hsize}{lX}
+                   Instrument &\cmd{inst-volume inst-out-bus inst-fx! clear-fx}\\
+                   FX & \cmd{fx-noise-gate fx-compressor fx-limiter fx-sustainer fx-freeverb fx-reverb fx-echo fx-chorus fx-distortion fx-distortion2 fx-distortion-tubescreamer bitcrusher fx-rlpf fx-rhpf fx-feedback fx-feedback-distortion } \\
+                 \end{tabularx}
+
+                 \subsection{Metronome}
+                 \begin{tabularx}{\hsize}{lX}
+                   Create & \cmd{metronome } \\
+                   Manipulate & \cmd{metro-start metro-tick metro-beat metro-bpm}\\
+                   bps & \cmd{beat-ms}\\
+                 \end{tabularx}
+
+                 \subsection{Scope}
+                 \begin{tabularx}{\hsize}{lX}
+                   Create \& Reset&\cmd{scope pscope reset-scopes } \\
+                 \end{tabularx}
+
+                 \subsection{Recording}
+                 \begin{tabularx}{\hsize}{lX}
+                   Stop \& Start&\cmd{recording-start recording-stop} \\
+                   Query & \cmd{recording?}\\
+                 \end{tabularx}
+               }
+
+               \colouredbox{pink}{
                  \section{Algorithmic Composition}
                  \subsection{Chance}
                  \begin{tabularx}{\hsize}{lX}
@@ -304,20 +203,31 @@
                  \begin{tabularx}{\hsize}{lX}
                    Scaled& \cmd{cosr sinr tanr}\\
                  \end{tabularx}
+               }
 
-                 \subsection{Functions}
+               \colouredbox{orange}{
+                 \section{Nodes \& Groups}
                  \begin{tabularx}{\hsize}{lX}
-                   Cycling & \cmd{cycle-fn}\\
-                 \end{tabularx}
-
-                 \subsection{List}
-                 \begin{tabularx}{\hsize}{lX}
-                   Rotation & \cmd{rotate}\\
-                   Creation & \cmd{fill}\\
+                   Create \& Free  & \cmd{node group node-free group-free group-clear group-deep-clear}\\
+                   Manipulate & \cmd{node-start node-pause node-place node-control node-control-range node-map-controls node-map-n-controls group-prepend-node group-append-node }\\
+                   Info & \cmd{node-tree}\\
                  \end{tabularx}
                }
 
                \colouredbox{red}{
+                 \section{External Assets}
+                 \subsection{Generic URLs}
+                 \begin{tabularx}{\hsize}{lX}
+                    Auto cache \& Return Path&\cmd{asset-path asset-seq asset-bundle-path asset-bundle-dir} \\
+                 \end{tabularx}
+
+                 \subsection{Freesound.org}
+                 \begin{tabularx}{\hsize}{lX}
+                    Auto cache \& Query&\cmd{freesound-info freesound-path freesound-pack-info freesound-pack-dir freesound-search freesound-searchm freesound-search-paths} \\
+                 \end{tabularx}
+               }
+
+               \colouredbox{purple}{
                  \section{Music}
                  \subsection{Pitch}
                  \begin{tabularx}{\hsize}{lX}
@@ -325,59 +235,12 @@
                    Note Shifting& \cmd{shift flat sharp invert inc-first dec-last}\\
                    Notes & \cmd{note octave-note nth-octave nth-equal-tempered-freq canonical-pitch-class-name note-info mk-midi-string match-note }\\
                    Scales & \cmd{scale resolve-scale scale-field nth-interval resolve-degree degree->int degree->interval degrees->pitches resolve-degree resolve-degrees interval-freq}\\
-                   Chords & \cmd{chord resolve-chord rand-chord invert-chord chord-degree}\\
+                   Chords & \cmd{chord resolve-chord rand-chord invert-chord}\\
                    Discovery & \cmd{find-scale-name find-note-name find-pitch-class-name find-chord}\\
                    Frequencies & \cmd{cents midi->hz hz->midi}\\
                    Amplitude & \cmd{db->amp}\\
                  \end{tabularx}
                }
-
-               \colouredbox{green}{
-                 \section{Sound Data}
-                 \subsection{Buffers}
-                 \begin{tabularx}{\hsize}{lX}
-                   Create \& Free & \cmd{buffer buffer-free buffer-alloc-read} \\
-                   Generate Buffer Data & \cmd{data->wavetable create-buffer-data}\\
-                   Read \& Write To Server & \cmd{buffer-read buffer-write! buffer-write-relay! buffer-fill! buffer-set! buffer-get buffer-save buffer-data buffer-read}\\
-                   Write To Filesystem & \cmd{write-wav}\\
-                   Streaming In \& Out&\cmd{buffer-stream buffer-stream? buffer-stream-close buffer-cue buffer-cue? buffer-cue-pos buffer-stream-close}\\
-                   Query & \cmd{buffer? buffer-info? file-buffer? buffer-out-stream? buffer-in-stream?}\\
-                   Info & \cmd{buffer-info num-frames buffer-id}\\
-                 \end{tabularx}
-                 \subsection{Samples}
-                 \begin{tabularx}{\hsize}{lX}
-                   Create  & \cmd{load-sample load-samples sample defsample} \\
-                   Playback& \cmd{mono-player stereo-player}\\
-                 \end{tabularx}
-
-                 \subsection{Busses}
-                 \begin{tabularx}{\hsize}{lX}
-                   Create \& Free & \cmd{control-bus audio-bus free-bus}\\
-                   Modify \& Read & \cmd{control-bus-set! control-bus-set-range! control-bus-get control-bus-get-range}\\
-                   Query & \cmd{bus? control-bus? audio-bus?}\\
-                   Info & \cmd{bus-id}\\
-                   Monitor & \cmd{bus-monitor control-bus-monitor audio-bus-monitor}\\
-                 \end{tabularx}
-               }
-
-
-
-
-
-
-
-
-
-
-               \colouredbox{blue}{
-                 \section{Persistence}
-                 \subsection{Local Store}
-                 \begin{tabularx}{\hsize}{lX}
-                    Access &\cmd{store-get store-set! store} \\
-                 \end{tabularx}
-               }
-
-
 
 
                \colouredbox{blue2}{
@@ -387,10 +250,8 @@
                    Buffer Playback & \cmd{scaled-play-buf scaled-v-disk}\\
                    Control & \cmd{hold}\\
                    Oscillators & \cmd{pm-osc square}\\
-                   Mix & \cmd{mix splay sum}\\
-                   Pitch & \cmd{add-cents}\\
+                   Mix & \cmd{mix splay}\\
                    Tapping & \cmd {tap}\\
-                   Range & \cmd{range-lin}\\
                  \end{tabularx}
                }
 
@@ -403,14 +264,6 @@
                    Lines& \cmd{LINEAR LIN EXPONENTIAL EXP}\\
                    Onset Analysis& \cmd{POWER MAGSUM COMPLEX RCOMPLEX PHASE WPHASE MKL}\\
                    Infinity& \cmd{INFINITE INF}\\
-                 \end{tabularx}
-               }
-
-               \colouredbox{blue}{
-                 \section{UGen Envelope Helper Functions}
-                 \begin{tabularx}{\hsize}{lX}
-                   & \cmd{env-perc env-triangle env-sine env-lin env-cutoff env-dadsr env-adsr env-asr} \\
-
                  \end{tabularx}
                }
 
@@ -549,6 +402,13 @@
                }
 
                \colouredbox{blue}{
+                 \section{MDA UGens}
+                 \begin{tabularx}{\hsize}{lX}
+                   & \cmd{mda-piano}\\
+                 \end{tabularx}
+               }
+
+               \colouredbox{blue}{
                  \section{Miscellaneous UGens}
                  \begin{tabularx}{\hsize}{lX}
                    & \cmd{pitch-shift pluck part-conv hilbert freq-shift g-verb free-verb free-verb2 moog-ff spring ball t-ball check-bad-values gendy1 gendy2 gendy3}\\
@@ -597,111 +457,11 @@
                  \end{tabularx}
                }
 
-               \colouredbox{blue}{
-                 \section{AY Extra UGens}
-                 \begin{tabularx}{\hsize}{lX}
-                   & \cmd{ay }\\
-                 \end{tabularx}
-               }
-
-               \colouredbox{blue}{
-                 \section{BBCut2 Extra UGens}
-                 \begin{tabularx}{\hsize}{lX}
-                   & \cmd{analyse-events2}\\
-                 \end{tabularx}
-               }
-
-
-               \colouredbox{blue}{
-                 \section{Bat Extra UGens}
-                 \begin{tabularx}{\hsize}{lX}
-                   & \cmd{coyote trig-avg w-amp markov-synth frame-compare needle-rect skip-needle}\\
-                 \end{tabularx}
-               }
-
-
-               \colouredbox{blue}{
-                 \section{Berlach Extra UGens}
-                 \begin{tabularx}{\hsize}{lX}
-                   & \cmd{lpf1 lpfvs6 lpf18 bl-buf-rd clipper4 clipper8 clipper32 soft-clipper4 soft-clipper8 soft-clip-amp4 soft-clip-amp8 os-wrap4 os-wrap8 os-fold4 os-fold8 os-trunc4 os-trunc8 drive-noise peak-eq2 peak-eq4}\\
-                 \end{tabularx}
-               }
-
-
-               \colouredbox{blue}{
-                 \section{Bhob Extra UGens}
-                 \begin{tabularx}{\hsize}{lX}
-                   & \cmd{henon2-dn henon2-dl henon2-dc henon-trig gbman2-dn gbman2-dl gbman2-dc gbman-trig standard2-dn standard2-dl standard2-dc standard-trig latoocarfian2-dn latoocarfian2-dl latoocarfian2-dc latoocarfian-trig lorenz2-dn lorenz2-dl lorenz2-dc lorenz-trig fhn2-dn fhn2-dl fhn2-dc fhn-trig pv-common-mag pv-common-mul pv-mag-minus pv-mag-gate pv-compander pv-mag-scale pv-morph pv-x-fade pv-soft-wipe pv-cutoff nested-allpass-n nested-allpass-l nested-allpass-c double-nested-allpass-n double-nested-allpass-l double-nested-allpass-c moog-ladder rlpfd streson nl-filt-n nl-filt-l nl-filt-c gauss-trig lf-brown-noise0 lf-brown-noise1 lf-brown-noise2 t-brown-rand dbrown2 d-gauss t-gauss-rand t-beta-rand gendy4 gendy5 t-grains2 t-grains3}\\
-                 \end{tabularx}
-               }
-
-               \colouredbox{blue}{
-                 \section{Blackrain Extra UGens}
-                 \begin{tabularx}{\hsize}{lX}
-                   & \cmd{amplitude-mod b-moog iir-filter svf}\\
-                 \end{tabularx}
-               }
-
-               \colouredbox{blue}{
-                 \section{Distortion Extra UGens}
-                 \begin{tabularx}{\hsize}{lX}
-                   & \cmd{crossover-distortion smooth-decimator sine-shaper decimator disintegrator}\\
-                 \end{tabularx}
-               }
-
-               \colouredbox{blue}{
-                 \section{Glitch Extra UGens}
-                 \begin{tabularx}{\hsize}{lX}
-                   & \cmd{glitch-rhpf glitch-hpf}\\
-                 \end{tabularx}
-               }
-               \colouredbox{blue}{
-                 \section{Mda Extra UGens}
-                 \begin{tabularx}{\hsize}{lX}
-                   & \cmd{mda-piano}\\
-                 \end{tabularx}
-               }
-               \colouredbox{blue}{
-                 \section{Membrane Extra UGens}
-                 \begin{tabularx}{\hsize}{lX}
-                   & \cmd{membrane-circle membrane-hexagon}\\
-                 \end{tabularx}
-               }
-
-               \colouredbox{blue}{
-                 \section{RFW Extra UGens}
-                 \begin{tabularx}{\hsize}{lX}
-                   & \cmd{switch-delay average-output}\\
-                 \end{tabularx}
-               }
-
-               \colouredbox{blue}{
-                 \section{SLU Extra UGens}
-                 \begin{tabularx}{\hsize}{lX}
-                   & \cmd{breakcore brusselator double-well double-well2 double-well3 gravity-grid gravity-grid2}\\
-                 \end{tabularx}
-               }
-
-               \colouredbox{blue}{
-                 \section{Stk Extra UGens}
-                 \begin{tabularx}{\hsize}{lX}
-                   & \cmd{stk-pluck stk-flute stk-bowed stk-mandolin stk-saxofony stk-shakers stk-banded-wg stk-voic-form stk-modal-bar stk-clarinet stk-blow-hole stk-moog stk-bee-three}\\
-                 \end{tabularx}
-               }
-
-               \colouredbox{blue}{
-                 \section{VOSIM Extra UGens}
-                 \begin{tabularx}{\hsize}{lX}
-                   & \cmd{vosim}\\
-                 \end{tabularx}
-               }
-
-
 
                \begin{flushright}
                  \footnotesize
                  \rule{0.7\linewidth}{0.25pt}
-                 \verb!Revision: 0.9.1.2, Date: 17th December, 2013!\\
+                 \verb!Revision: 0.7.0.1, Date: 27th June, 2012!\\
                  \verb!Sam Aaron (sam.aaron gmail com)!
                \end{flushright}
 
